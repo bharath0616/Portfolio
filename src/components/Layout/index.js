@@ -8,7 +8,7 @@ const Layout = () => {
         <div className='App'>
             <Sidebar />
             <div className='page'>
-            <Outlet/>
+            <Outlet />
                 
             </div>
         </div>

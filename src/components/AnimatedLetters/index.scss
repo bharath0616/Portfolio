@@ -5,8 +5,18 @@
     animation-fill-mode: forwards;
     min-width: 10px;
 }
-@for $i from 1 through 46{
+.text-animate-hover{
+        min-width: 10px;
+        display: inline-block;
+        animation-fill-mode: both;
+        &:hover{
+            animation: rubberBand 1.1s;
+            color:#ffe600;
+        }
+}
+
+@for $i from 1 through 43{
     .text-animate._#{$i}{
-        animation-delay: #{$i/10}s;
+        animation-delay: #{$i/15}s;
     }
 }
