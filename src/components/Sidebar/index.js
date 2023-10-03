@@ -1,4 +1,5 @@
-    import { Link, NavLink } from 'react-router-dom'
+import React from 'react';
+import { Link, NavLink } from 'react-router-dom'
     import './index.scss'
     import LogoS from '../../assets/images/logo-s.png'
     import LogoSubtitle from '../../assets/images/logo_sub.png'
@@ -15,7 +16,7 @@
                 <img src={LogoSubtitle} alt="subtitle" />
 
                 </Link>
-    <nav>
+            <nav>
                 <NavLink exact="true" activeclassname="active" to="/">
                     <FontAwesomeIcon icon={faHome} color="#4e4e4e" />
                 </NavLink>
