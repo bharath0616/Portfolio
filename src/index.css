@@ -1,17 +1,14 @@
-
-html{
+html {
   font-size: 63%;
 }
 
-  body {
+body {
   margin: 0;
   font: 300 11px/1.4 'Helvetica Neue', 'sans-serif';
-  color:white;
+  color: white;
   background: #022537;
   overflow: hidden;
-  display:block;
+  display: block;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  }
-
-
+  -moz-osx-font-smoothing: grayscale;
+}
