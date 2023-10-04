@@ -84,6 +84,16 @@ nav{
             content: 'ABOUT';
         }
     }
+    a.project-link{
+        &:after{
+            content: 'PROJECT';
+        }
+    }
+    a.resume-link{
+        &:after{
+            content: 'RESUME';
+        }
+    }
     a.contact-link{
         &:after{
             content: 'CONTACT';

@@ -27,6 +27,15 @@
             animation-delay: 1.4s;
         }
     }
+    h3{
+        color:#fff;
+        font-size: 53px;
+        letter-spacing: 1.5px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 405;
+
+    }
     h2{
         color: #8e8e8e;
         margin-top: 20px;
@@ -63,13 +72,12 @@
     .text-zone{
         margin-left: 14%;
         width: 80%;
-        h1{
-            font-size: 40px;
-            img{
-                width: 21px;
-                margin-left:15px;
+        
+            
+            h3{
+                font-size: 40px;
             }
-        }
+        
         .flat-button{
             font-size: 11px;
         }
@@ -81,13 +89,10 @@
     .text-zone{
         margin-left: 17%;
         width: 80%;
-        h1{
-            font-size: 37px;
-            img{
-                width: 21px;
-                margin-left:13px;
-            }
-        }
+        h3{
+            font-size: 30px;
+            letter-spacing: 1.4px;
+        }   
         .flat-button{
             font-size: 9px;
             padding: 7px 15px;
@@ -101,12 +106,7 @@
     .text-zone{
         margin-left: 17%;
         width: 80%;
-        h1{
-            font-size: 30px;
-            img{
-                width: 16px;
-            }
-        }
+        
         h2{
             font-size: 11px;
         }
@@ -122,15 +122,14 @@
     .text-zone{
         margin-left: 14%;
         width: 80%;
-        h1{
-            font-size: 26.5px;
-            img{
-                width: 16px;
-            }
-        }
+       
         h2{
             font-size: 11px;
         }
+        h3{
+            font-size: 26px;
+            letter-spacing: 1.4px;
+        }   
         .flat-button{
             font-size: 6px;
             padding: 4px 12px;
@@ -144,12 +143,16 @@
         margin-left: 14%;
         width: 80%;
         h1{
-            font-size: 24px;
-            letter-spacing: 0.8px;
+            font-size: 49px;
+            letter-spacing: 1.5px;
             img{
-                width: 13px;
-                margin-left:8px;
+                width: 26px;
+                margin-left:15px;
             }
+        }
+        h3{
+            font-size: 23px;
+            letter-spacing: 1px;
         }
         h2{
             font-size: 9.5px;

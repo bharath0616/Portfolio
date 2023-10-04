@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import LogoTitle from '../../assets/images/logo-s.png';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
+import Logo from "./Logo"
 import './index.scss';
 
 const Home = () => {
@@ -27,18 +28,19 @@ const Home = () => {
                 <img src={LogoTitle} alt="developer"/>
                 <AnimatedLetters letterClass={letterClass}
                 strArray={nameArray}
-                idx={15} />
+                idx={15} /></h1>
                 <br />
-                <AnimatedLetters letterClass={letterClass}
+                <h3><AnimatedLetters letterClass={letterClass}
                 strArray={jobArray}
-                idx={21} />
-                </h1>
+                idx={21} /></h3>
+                
 
                 <h2>
                 CS | BTech | VIT Vellore
                 </h2>
                 <Link to="/contact" className="flat-button">CONTACT ME</Link>
             </div>
+            
         </div>
     );
 }
