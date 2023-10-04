@@ -5,7 +5,7 @@
         margin-left: 11%;
         top:50%;
         transform: translateY(-50%);
-        width: 45%;
+        width: 85%;
         max-height: 90%;
     }
         h1{
@@ -20,7 +20,7 @@
         img{
             mix-blend-mode:multiply;
             width: 32px;
-            margin-left:22px ;
+            margin-left:22px;
             opacity: 1;
             height: auto;
             animation: rotateIn 1s linear both;
@@ -56,4 +56,105 @@
 }
     
     }
+}
+
+@media(max-width:690px){
+    .home-page{
+    .text-zone{
+        margin-left: 14%;
+        width: 80%;
+        h1{
+            font-size: 40px;
+            img{
+                width: 21px;
+                margin-left:15px;
+            }
+        }
+        .flat-button{
+            font-size: 11px;
+        }
+    }
+}
+}
+@media(max-width:515px){
+    .home-page{
+    .text-zone{
+        margin-left: 17%;
+        width: 80%;
+        h1{
+            font-size: 37px;
+            img{
+                width: 21px;
+                margin-left:13px;
+            }
+        }
+        .flat-button{
+            font-size: 9px;
+            padding: 7px 15px;
+        }
+    }
+}
+}
+
+@media(max-width:477px){
+    .home-page{
+    .text-zone{
+        margin-left: 17%;
+        width: 80%;
+        h1{
+            font-size: 30px;
+            img{
+                width: 16px;
+            }
+        }
+        h2{
+            font-size: 11px;
+        }
+        .flat-button{
+            font-size: 7px;
+            padding: 6px 14px;
+        }
+    }
+}
+}
+@media(max-width:405px){
+    .home-page{
+    .text-zone{
+        margin-left: 14%;
+        width: 80%;
+        h1{
+            font-size: 26.5px;
+            img{
+                width: 16px;
+            }
+        }
+        h2{
+            font-size: 11px;
+        }
+        .flat-button{
+            font-size: 6px;
+            padding: 4px 12px;
+        }
+    }
+}
+}
+@media(max-width:366px){
+    .home-page{
+    .text-zone{
+        margin-left: 14%;
+        width: 80%;
+        h1{
+            font-size: 24px;
+            letter-spacing: 0.8px;
+            img{
+                width: 13px;
+                margin-left:8px;
+            }
+        }
+        h2{
+            font-size: 9.5px;
+            letter-spacing: 3.5px;
+        }
+    }
+}
 }
