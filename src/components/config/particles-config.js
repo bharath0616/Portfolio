@@ -10,6 +10,7 @@ const particlesConfig = {
     size: "",
     opacity: 1
   },
+  
   backgroundMask: {
     composite: "destination-out",
     cover: {
@@ -307,7 +308,8 @@ const particlesConfig = {
     opacity: {
       random: {
         enable: false,
-        minimumValue: 0.1
+        minimumValue: 0.1     
+        
       },
       value: {
         min: 0.1,

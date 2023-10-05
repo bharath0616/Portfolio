@@ -3,13 +3,13 @@ import './App.scss';
 import {  Routes,Route} from 'react-router-dom'
 import Layout from './components/Layout';
 import Home from './components/Home';
-import ParticlesBackground from './components/ParticlesBackground';
+import ParticleComponent from './ParticlesBackground';
 
 
 function App() {
   return (
     <>
-    <ParticlesBackground />
+    <ParticleComponent />
         <Routes>
         
           <Route path="/" element={<Layout />}>
