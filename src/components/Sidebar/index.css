@@ -14,6 +14,155 @@
 .nav-bar .Logo img {
   display: block;
   margin: 8px auto;
-  width: 24px;
+  width: 30px;
   height: auto;
+  color: white;
+}
+.nav-bar .Logo img.sub-logo {
+  width: 50px;
+}
+.nav-bar nav {
+  display: block;
+  text-align: center;
+  position: absolute;
+  height: 211px;
+  top: 51%;
+  margin-top: -118px;
+  width: 100%;
+  margin-right: 10%;
+}
+.nav-bar nav a {
+  font-size: 22px;
+  color: #4e4e4e;
+  display: block;
+  line-height: 51px;
+  height: 51px;
+  position: relative;
+  text-decoration: none;
+}
+.nav-bar nav a i {
+  transition: all 0.3s ease-out;
+}
+.nav-bar nav a:hover {
+  color: #ddf600;
+}
+.nav-bar nav a:hover svg {
+  opacity: 0;
+}
+.nav-bar nav a:hover:after {
+  opacity: 1;
+}
+.nav-bar nav a:after {
+  content: "";
+  font-size: 10px;
+  letter-spacing: 2px;
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.nav-bar nav a:first-child::after {
+  content: "HOME";
+}
+.nav-bar nav a.about-link:after {
+  content: "ABOUT";
+}
+.nav-bar nav a.project-link:after {
+  content: "PROJECT";
+}
+.nav-bar nav a.resume-link:after {
+  content: "RESUME";
+}
+.nav-bar nav a.contact-link:after {
+  content: "CONTACT";
+}
+.nav-bar nav a.active svg {
+  color: #ddf600;
+}
+.nav-bar ul {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  display: block;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+.nav-bar ul li a {
+  padding: 8px 0;
+  display: block;
+  font-size: 15px;
+  line-height: 16px;
+}
+.nav-bar ul li a:hover svg {
+  color: #ddf600;
+}
+
+@media (max-width: 680px) {
+  .nav-bar {
+    width: 58px;
+  }
+  .nav-bar .Logo {
+    padding: 7px 0px;
+  }
+  .nav-bar .Logo img {
+    width: 25px;
+  }
+  .nav-bar .Logo img.sub-logo {
+    width: 45px;
+  }
+  .nav-bar nav {
+    height: 211px;
+    top: 51%;
+    margin-top: -118px;
+    width: 100%;
+    margin-right: 10%;
+  }
+  .nav-bar nav a {
+    font-size: 22px;
+  }
+  .nav-bar nav a:after {
+    content: "";
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+  .nav-bar nav a ul {
+    bottom: 20px;
+    width: 100%;
+  }
+  .nav-bar nav a ul li a {
+    padding: 8px 0;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 680px) {
+  .nav-bar {
+    width: 55px;
+  }
+}
+@media (max-width: 505px) {
+  .nav-bar {
+    width: 48px;
+  }
+}
+@media (max-width: 477px) {
+  .nav-bar {
+    width: 45px;
+  }
+}
+@media (max-width: 405px) {
+  .nav-bar {
+    width: 42px;
+  }
+}
+@media (max-width: 370px) {
+  .nav-bar {
+    width: 38px;
+  }
 }/*# sourceMappingURL=index.css.map */
