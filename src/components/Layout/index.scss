@@ -17,9 +17,44 @@
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
 }
-.about-page{
+.about-page,
+.contact-page{
     .text-zone{
         position: absolute;
         left:10%;
+        top:5%;
+        transform: translateY(-50%);
+        width: 85%;
+        vertical-align: middle;
+        display: table-cell;
+        max-height: 90%;
+        @media(max-width:830px){
+            left:13%;
+        }
+      
     }
+}
+@media(max-width:620px){
+    .about-page,
+.contact-page{
+    .text-zone{
+    left:16%;
+}
+}
+}
+@media(max-width:830px){
+    .about-page,
+.contact-page{
+    .text-zone{
+    left:12%;
+}
+}
+}
+@media(max-width:830px){
+    .about-page,
+.contact-page{
+    .text-zone{
+    left:12%;
+}
+}
 }
