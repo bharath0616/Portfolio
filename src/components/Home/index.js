@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
-
+import Loader from 'react-loaders';
 import LogoTitle from '../../assets/images/logo-s.png';
 import { useEffect, useState } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
@@ -17,7 +17,7 @@ const Home = () => {
         
     },[])
     return(
-        
+        <>
         <div className="container home-page">
         
             <div className="text-zone">
@@ -44,6 +44,8 @@ const Home = () => {
             </div>
             
         </div>
+        <Loader type="pacman" />
+    </>
     );
 }
 
