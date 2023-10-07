@@ -7,6 +7,7 @@ import ParticleComponent from './ParticlesBackground';
 import About from './components/About';
 import Project from './components/Projects';
 import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 
 function App() {
