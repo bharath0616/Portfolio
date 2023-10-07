@@ -21,7 +21,7 @@
     transition: border-color 0.3s ease; 
     box-shadow: 0px 0px 15px rgb(238, 236, 236);  
     &:hover{
-        border-color: #ffe600;
+        box-shadow: 0px 0px 20px #ffe600;
     }  
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
@@ -46,14 +46,16 @@
 .contact-form{
     width: 50%;
     height: 300px;
-    border: 0px solid beige;
+    border: 3px solid transparent;
     padding: 35px;
     background: #050220;
     border-radius: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
     &:hover{
-        border-color: #ffe600;
-    }   
+        box-shadow: 0px 0px 40px rgb(46, 33, 123);
+    }  
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s; 
     ul{
         padding: 0;
         margin: 0;
@@ -97,7 +99,7 @@
         color: #fff;
         padding: 0 20px;
         box-sizing: border-box;
-        border-radius: 0px;
+        border-radius:10px;
     }
 
     textarea{
