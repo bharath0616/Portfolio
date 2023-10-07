@@ -226,6 +226,7 @@
     .contact-form{
         width: 100%;
         padding: 25px;
+        padding-bottom: 42px;
         .flat-button{
             font-size: 10px;
         }
@@ -251,6 +252,7 @@
     .contact-form{
         width: 100%;
         padding: 25px;
+        padding-bottom: 44px;
     }
 }
 @media(max-width: 405px) {
@@ -272,7 +274,11 @@
     }
     .contact-form{
         width: 100%;
-        padding: 25px;
+        padding: 23px;
+        padding-bottom: 30px;
+        input[type='text'],input[type='email']{
+            height: 33px;
+           }
         .flat-button{
             font-size: 9px;
             letter-spacing: 2px;
