@@ -266,7 +266,9 @@ ul{
 @media(max-width:370px){
     .nav-bar{
         width: 38px;
+    
         nav{
+            
             a{
                 font-size: 20px;
                 &:after{
@@ -276,6 +278,9 @@ ul{
                 }
 
             }
+            
+            
+            
         }
     }
 
