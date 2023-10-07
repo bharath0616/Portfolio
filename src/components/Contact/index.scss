@@ -203,6 +203,10 @@
         padding-bottom: 55px;
        input[type='text'],input[type='email']{
         height: 35px;
+        font-size: 14px;
+       }
+       textarea{
+        font-size: 14px;
        }
     }
 }
@@ -230,6 +234,13 @@
         .flat-button{
             font-size: 10px;
         }
+        input[type='text'],input[type='email']{
+            height: 35px;
+            font-size: 12px;
+           }
+           textarea{
+            font-size: 12px;
+           }
     }
 }
 @media(max-width: 500px) {
@@ -277,7 +288,11 @@
         padding: 23px;
         padding-bottom: 30px;
         input[type='text'],input[type='email']{
+            font-size: 10px;
             height: 33px;
+           }
+           textarea{
+            font-size: 10px;
            }
         .flat-button{
             font-size: 9px;
