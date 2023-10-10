@@ -23,14 +23,18 @@
     &:hover{
         box-shadow: 0px 0px 20px #ffe600;
     }  
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    animation: fadeInUp 2s 2s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
    
 }
 .text-zone1{
     box-sizing: border-box;
     width:40%;
     margin-bottom: 50px;
+     animation: fadeInDown 2s 4s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
     
    h1{
     font-size: 45px;
@@ -55,8 +59,9 @@
     &:hover{
         box-shadow: 0px 0px 60px rgb(46, 33, 123);
     }  
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s; 
+    animation: fadeInDown 2s 4s;
+    animation-fill-mode: forwards;  
+    opacity: 0;
     ul{
         padding: 0;
         margin: 0;
@@ -69,7 +74,7 @@
             display: block;
             position: relative;
             opacity: 0;
-            animation: fadeInUp 2s 2s;
+            animation: fadeInUp 2s 5s;
             animation-fill-mode: forwards;
         }
 
