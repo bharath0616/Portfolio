@@ -59,7 +59,7 @@ return(
         Feel free to reach out to me for any inquiries, collaborations, 
         or just a friendly chat about tech and innovation.
          I'm always excited to connect with fellow enthusiasts and  
-         my virtual door is always open. Let's explore the world of technology together!"
+         my virtual door is always open. Let's explore the world of technology together!
         </p>
     </div>
     <div className='contact-form'>

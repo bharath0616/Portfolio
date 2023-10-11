@@ -303,7 +303,7 @@ const particlesConfig = {
         height: 1080
       },
       limit: 0,
-      value: 200
+      value: 220
     },
     opacity: {
       random: {
