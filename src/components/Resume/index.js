@@ -4,13 +4,14 @@ import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import React from 'react';
 import resume from '../../assets/images/Resume.png'
+import resumePdf from '../../assets/Resume.pdf'
 
 const Resume = () => {
     const [letterClass, setLetterClass]=useState('text-animate')
     const handleDownloadClick = () => {
         // Create an anchor element to trigger the download
         const anchor = document.createElement('a');
-        anchor.href = resume;
+        anchor.href = resumePdf;
         anchor.download = 'Resume.pdf'; // You can specify the filename here
         anchor.click();
     };
