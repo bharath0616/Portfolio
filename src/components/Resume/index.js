@@ -8,6 +8,14 @@ import resume from '../../assets/Resume.pdf'
 
 const Resume = () => {
     const [letterClass, setLetterClass]=useState('text-animate')
+    const handleDownloadClick = () => {
+        // Create an anchor element to trigger the download
+        const anchor = document.createElement('a');
+        anchor.href = resume;
+        anchor.download = 'Resume.pdf'; // You can specify the filename here
+        anchor.click();
+    };
+
     useEffect(() => {
          setTimeout(() => {
             setLetterClass('text-animate-hover')
@@ -36,7 +44,7 @@ return(
     </div>
 
     <div className='download'>
-    <a href="resume"className='flat-button'>Download</a>
+    <a onClick={handleDownloadClick} href="resume"className='flat-button'>Download</a>
     </div>
         
     </div>
