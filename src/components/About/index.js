@@ -3,17 +3,17 @@ import {
     faNodeJs,
     faCss3,
     faGitAlt,
-    faHtml5,
+    faPython,
     faJsSquare,
     faReact,
   } from '@fortawesome/free-brands-svg-icons'
-  
-  import {Link} from 'react-router-dom';
+
 import Loader from 'react-loaders';
 import AnimatedLetters from '../AnimatedLetters';
-
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState,useEffect } from 'react';
+
 
 const About = () => {
     const [letterClass, setLetterClass]=useState('text-animate')
@@ -25,13 +25,10 @@ const About = () => {
     },[])
 return(
     <>
-    <div className="top-container">
-    <div className='Resume'>
-  <Link to="/resume" className='flat-button'>RESUME</Link>
-</div>  
-</div>
+    <div class="top-container">
     <div className='container about-page about-container'>
     <div className=' about-text-zone'>
+    
         <h1>
             <AnimatedLetters
             letterClass={letterClass} 
@@ -62,7 +59,7 @@ return(
               <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
             </div>
             <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+              <FontAwesomeIcon icon={faPython} color="#F06529" />
             </div>
             <div className="face3">
               <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
@@ -77,10 +74,16 @@ return(
               <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
             </div>
           </div>
+         
         </div> 
-        
+       
     </div>
-    
+    <div className='Resume'>
+  <Link to="/resume" className='flat-button'>RESUME</Link>
+</div> 
+    </div>
+   
+
     
   
     <Loader type="pacman" />

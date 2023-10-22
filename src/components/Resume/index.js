@@ -36,7 +36,7 @@ return(
         
     </div>
     <div className='doc'>
-    <img src={resume}></img>
+    <img src={resume} alt='resume.png'></img>
     </div>
 
     <div className='download'>

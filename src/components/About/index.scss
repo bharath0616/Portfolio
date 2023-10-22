@@ -1,9 +1,26 @@
-.top-container{
-  margin-top: 550px;
-  position: absolute;
-  z-index: 10002;
+
+.top-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  margin-left: 600px;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+
+
+.about-text-zone{
+  width: 48%; /* Adjust the width as needed */
+
+  padding: 10px;
+}
+
+.Resume {
+ margin-top: 500px;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  z-index: 10001;
 }
   .flat-button{
     color: #ffe600;
@@ -29,8 +46,9 @@
 
 .about-container{
   display: flex;
-  margin-top: 100px;
+  justify-content: space-between;
   width: 100%;
+  margin-bottom: 10px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
 }
 .about-text-zone{
@@ -53,6 +71,8 @@
     width: 40%;
     height:200%;
     padding-top: 4.2%;
+    display: flex;
+  justify-content: space-between;
   }
   
   .cubespinner {
@@ -135,6 +155,8 @@
     }
     .top-container{
       margin-top: 1000px;
+      display: flex;
+      flex-direction: column;
     }
     .stage-cube-cont{
       padding:6%;
@@ -143,10 +165,16 @@
     .about-text-zone{
       margin-bottom: 80px;
     }
+    .Resume{
+      margin-top: 20px;
+    }
   }
 @media(max-width:596px){
-  .top-container{
-    margin-top: 1000px;
+  .about-container{
+    margin-top: 100px;
+    h1{
+      font-size: 40px;
+    }
   }
 }
 @media(max-width:400px){
