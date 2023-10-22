@@ -1,10 +1,32 @@
 .top-container{
-  display:flex;
-  flex-direction: column-reverse;
-  justify-content: center;
-  align-items: center;
   margin-top: 550px;
+  position: absolute;
+  z-index: 10002;
+  align-items: center;
+  margin-left: 600px;
 }
+  .flat-button{
+    color: #ffe600;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4.5px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffe600;
+    margin-top: 25px;
+    float: left;
+    animation: fadeln 1s 1.8s backwards;
+    white-space: nowrap;
+
+&:hover{
+   background: #ffe600;
+   color: black;
+}
+   
+   }
+
+
 .about-container{
   display: flex;
   margin-top: 100px;
@@ -15,7 +37,7 @@
   margin-left:10%;
   width: 50%;
   h1{
-    font-size: 40px;
+    font-size: 50px;
   }
   p{
     font-size: 20px;
@@ -103,7 +125,8 @@
       transform: rotateX(90deg);
     }
   }
-
+ 
+ 
   @media(max-width:940px){
     .about-container{
       flex-direction: column;

@@ -7,8 +7,11 @@ import {
     faJsSquare,
     faReact,
   } from '@fortawesome/free-brands-svg-icons'
-import AnimatedLetters from '../AnimatedLetters';
+  
+  import {Link} from 'react-router-dom';
 import Loader from 'react-loaders';
+import AnimatedLetters from '../AnimatedLetters';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useState,useEffect } from 'react';
 
@@ -22,7 +25,11 @@ const About = () => {
     },[])
 return(
     <>
-    <div className='top-container '>
+    <div className="top-container">
+    <div className='Resume'>
+  <Link to="/resume" className='flat-button'>RESUME</Link>
+</div>  
+</div>
     <div className='container about-page about-container'>
     <div className=' about-text-zone'>
         <h1>
@@ -74,11 +81,8 @@ return(
         
     </div>
     
-    <div className='Resume'>
-    <a href="resume"className='flat-button'>Resume</a>
-    </div>
     
-    </div>
+  
     <Loader type="pacman" />
     </>
     

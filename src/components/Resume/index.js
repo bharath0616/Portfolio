@@ -3,8 +3,7 @@ import Loader from 'react-loaders';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import React from 'react';
-import resume from '../../assets/Resume.pdf'
-
+import resume from '../../assets/images/Resume.png'
 
 const Resume = () => {
     const [letterClass, setLetterClass]=useState('text-animate')
@@ -23,6 +22,7 @@ const Resume = () => {
         
     },[])
 return(
+    
     <>
     <div className='container2 Resume-page1'>
     <div className='text-zone2'>
@@ -36,11 +36,7 @@ return(
         
     </div>
     <div className='doc'>
-    <iframe
-        title="PDF Viewer"
-        src={resume}
-        width="100%"
-        height="800" ></iframe>
+    <img src={resume}></img>
     </div>
 
     <div className='download'>
