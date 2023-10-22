@@ -9,11 +9,14 @@ import resumePdf from '../../assets/Resume.pdf'
 const Resume = () => {
     const [letterClass, setLetterClass]=useState('text-animate')
     const handleDownloadClick = () => {
-        // Create an anchor element to trigger the download
+    
         const anchor = document.createElement('a');
         anchor.href = resumePdf;
-        anchor.download = 'Resume.pdf'; // You can specify the filename here
+        anchor.download = 'Resume.pdf';
+        anchor.target = '_blank';
+        document.body.appendChild(anchor);
         anchor.click();
+        document.body.removeChild(anchor);
     };
 
     useEffect(() => {
