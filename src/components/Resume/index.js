@@ -17,6 +17,10 @@ const Resume = () => {
         document.body.appendChild(anchor);
         anchor.click();
         document.body.removeChild(anchor);
+
+        anchor.onload = () => {
+            window.focus();
+        };
     };
 
     useEffect(() => {
