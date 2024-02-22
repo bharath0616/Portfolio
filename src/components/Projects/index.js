@@ -1,29 +1,45 @@
 import './index.scss';
+import Card from "react-bootstrap/Card";
+import Button from "react-bootstrap/Button";
+import { CgWebsite } from "react-icons/cg";
+import { BsGithub } from "react-icons/bs";
 import Loader from 'react-loaders';
-import { useState, useEffect } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
-const Project = () => {
-    const [letterClass, setLetterClass]=useState('text-animate')
-    useEffect(() => {
-         setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        },3980)
-        
-    },[])
+
+
+const Project = (props) => {
+   
 return(
     <>
-    <div className='container contact-page'>
-    <div className='text-zone'>
-        <h1>
-            <AnimatedLetters
-            letterClass={letterClass} 
-            strArray={['M','y','','P','r','o','j','e','c','t','s']}
-            idx={16}
-             />
-        </h1>
+    <Card className="project-card-view">
+  <Card.Img variant="top" src={props.imgPath} alt="card-img" />
+  <Card.Body>
+    <Card.Title style={{ textAlign: "center", fontSize: "2em", fontWeight: "bold" }}>
+      {props.title}
+    </Card.Title>
+    <Card.Text style={{ textAlign: "center",fontSize: "1.5em" }}>
+      {props.description}
+    </Card.Text>
+    <div style={{ textAlign: "center", marginTop: "20px" }}>
+      <Button variant="primary" href={props.ghLink} target="_blank">
+        <BsGithub /> &nbsp;
+        {props.isBlog ? "Blog" : "GitHub"}
+      </Button>
+      {!props.isBlog && props.demoLink && (
+        <Button
+          variant="primary"
+          href={props.demoLink}
+          target="_blank"
+          style={{ marginLeft: "10px" }}
+        >
+          <CgWebsite /> &nbsp;
+          {"Demo"}
+        </Button>
+      )}
     </div>
-        
-    </div>
+  </Card.Body>
+</Card>
+
+
     <Loader type="pacman" />
     </>
 )
