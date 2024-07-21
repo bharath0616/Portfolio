@@ -1,98 +1,73 @@
 .project-section {
-    margin-left: 50px;
-    margin-top: 50px;
-    position: relative;
-    padding-top: 150px;
-    padding-bottom: 30px;
-  
-  
-    .project-card, .blog-card {
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-      padding: 50px 25px;
-      
-      &-view {
-        box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-        color: white;
-        background-color: transparent;
-        opacity: 0.9;
-        transition: all 0.5s ease;
-        height: 100%;
-  
-        &:hover {
-          transform: scale(1.02);
-          overflow: hidden;
-          box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
-        }
-      }
-    }
-  
-    .blog-card-view {
-      background-color: transparent;
-      box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459);
+  margin-left: 50px;
+  margin-top: 50px;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 30px;
+
+  .project-card,
+  .blog-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; // Reduced padding for better fit
+    margin-bottom: 30px; // Added margin-bottom for spacing
+    width: 100%; // Ensuring cards take full width
+    max-width: 300px; // Ensuring all cards have the same width
+    flex-grow: 1; // Allowing cards to take equal space
+
+    &-view {
+      box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
       color: white;
+      background-color: transparent;
+      opacity: 0.9;
       transition: all 0.5s ease;
       height: 100%;
-      
-  
+
       &:hover {
         transform: scale(1.02);
         overflow: hidden;
-        box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65);
+        box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
       }
     }
-  
-    .blog-link {
-      color: white;
-      text-decoration: none;
-  
-      &:hover {
-        cursor: pointer;
-      }
-    }
-  
-    .card-img-top {
-        width: 100%; 
-        height: 200px; 
-        object-fit: cover;  
-        border-radius: 20px;
-      }
-  
-    .blog-img {
-      padding: 0;
-      opacity: 0.8;
-      border-radius: 0;
-    }
-  
-    .btn-primary {
-      color: #fff;
-      background-color: #623686;
-      border-color: #623686;
-  
-      &:hover {
-        background-color: #6d20c5d7;
-        border-color: #6d20c5d7;
-      }
-  
-      &:focus {
-        outline: none;
-        box-shadow: none;
-      }
-    }
-  
-    .project-heading {
-      color: white;
-      font-size: 2.3em;
-      font-weight: 500;
-      padding-top: 10px;
-    }
-    @media (min-width: 768px) { 
-        .project-card, .blog-card {
-          flex: 0 0 calc(50% - 20px); 
-          margin: 10px; 
-        }
-      }
   }
-  
+
+  .card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+
+  .btn-primary {
+    color: #fff;
+    background-color: #623686;
+    border-color: #623686;
+
+    &:hover {
+      background-color: #6d20c5d7;
+      border-color: #6d20c5d7;
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
+  .project-heading {
+    color: white;
+    font-size: 2.3em;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    .project-card,
+    .blog-card {
+      flex: 0 0 calc(33.333% - 20px); 
+      margin: 10px;
+    }
+  }
+}
