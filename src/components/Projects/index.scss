@@ -1,35 +1,32 @@
 .project-section {
-  margin-left: 50px;
-  margin-top: 50px;
-  position: relative;
-  padding-top: 150px;
-  padding-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 
-  .project-card,
-  .blog-card {
+  .project-card {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px; // Reduced padding for better fit
-    margin-bottom: 30px; // Added margin-bottom for spacing
-    width: 100%; // Ensuring cards take full width
-    max-width: 300px; // Ensuring all cards have the same width
-    flex-grow: 1; // Allowing cards to take equal space
+    margin: 20px;
+    margin-top: 70px;
+  }
 
-    &-view {
-      box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
-      color: white;
-      background-color: transparent;
-      opacity: 0.9;
-      transition: all 0.5s ease;
-      height: 100%;
+  .project-card-view {
+    border-radius: 20px;
+    box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459);
+    color: white;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: all 0.5s ease;
+    height: 100%;
+    max-width: 400px;
+    padding: 20px;
 
-      &:hover {
-        transform: scale(1.02);
-        overflow: hidden;
-        box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
-      }
+    &:hover {
+      transform: scale(1.02);
+      overflow: hidden;
+      box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561);
     }
   }
 
@@ -63,11 +60,12 @@
     padding-top: 10px;
   }
 
-  @media (min-width: 768px) {
-    .project-card,
-    .blog-card {
-      flex: 0 0 calc(33.333% - 20px); 
-      margin: 10px;
+  @media (max-width: 768px) {
+    .project-card-view {
+      padding: 15px;
+    }
+    .card-img-top {
+      height: 150px;
     }
   }
 }

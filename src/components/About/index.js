@@ -42,16 +42,10 @@ return(
           </p>
          
           <p>
-          I am a pre-final year student pursuing BTech in Computer science and engineering with specialization in business systems.
-          </p>
-          <p>
-            Few of my hobbies include
-             Playing Games,Cubing,Travelling
-          </p>
-          <p>
-            You can look into my resume in next section for more information!
+          I am a dedicated Computer Science and Business Systems student at Vellore Institute of Technology with a strong passion for backend development and full-stack projects. I have successfully completed multiple internships and projects that showcase my ability to build efficient, scalable, and user-centric applications. My work ethic is defined by attention to detail, continuous learning, and a drive to solve complex problems effectively.
           </p>
     </div>
+    
 
     <div className="stage-cube-cont">
           <div className="cubespinner">
@@ -78,6 +72,7 @@ return(
         </div> 
        
     </div>
+    
     <div className='Resume'>
   <Link to="/resume" className='flat-button'>RESUME</Link>
 </div> 

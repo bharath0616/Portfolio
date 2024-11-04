@@ -31,8 +31,8 @@ function Projects() {
 
       <Container fluid className="project-section">
         <Container>
-          <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-            <Col md={4} className="project-card">
+          <Row className="justify-content-center">
+            <Col xs={12} sm={6} md={4} lg={3} className="project-card">
               <Project
                 imgPath={mern}
                 isBlog={false}
@@ -42,7 +42,7 @@ function Projects() {
                 demoLink="https://ivyestate-zo0s.onrender.com"
               />
             </Col>
-            <Col md={4} className="project-card">
+            <Col xs={12} sm={6} md={4} lg={3} className="project-card">
               <Project
                 imgPath={web}
                 isBlog={false}
@@ -51,24 +51,22 @@ function Projects() {
                 ghLink="https://github.com/bharath0616/UiPath-rpa-web-automation.git"
               />
             </Col>
-            <Col md={4} className="project-card">
+            <Col xs={12} sm={6} md={4} lg={3} className="project-card">
               <Project
                 imgPath={restaurant}
                 isBlog={false}
                 title="UrbanMart"
                 description="UrbanMart is a dynamic eCommerce platform designed to provide a seamless shopping experience. This project features a modern, minimalist design with advanced functionalities such as search, category filtering, and a fully integrated shopping cart system and stripe payments with MySQL database for storage."
                 ghLink="https://github.com/bharath0616/UrbanMart.git"
-                demoLink=""
               />
             </Col>
-            <Col md={4} className="project-card">
+            <Col xs={12} sm={6} md={4} lg={3} className="project-card">
               <Project
                 imgPath={stock}
                 isBlog={false}
                 title="Stock automation"
                 description="Automated the process of collecting the stock data from NSE and sending it to users via smtp email."
                 ghLink="https://github.com/bharath0616/Rpa-uipath--nse-stock-report.git"
-                demoLink=""
               />
             </Col>
           </Row>

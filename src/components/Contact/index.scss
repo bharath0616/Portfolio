@@ -23,7 +23,7 @@
     &:hover{
         box-shadow: 0px 0px 20px #230a57;
     }  
-    animation: fadeInUp 2s 2s;
+    animation: fadeInUp 1s 1s;
     animation-fill-mode: forwards;  
     opacity: 0;
    
@@ -32,7 +32,7 @@
     box-sizing: border-box;
     width:40%;
     margin-bottom: 50px;
-     animation: fadeInDown 2s 4s;
+     animation: fadeInDown 1s 2s;
     animation-fill-mode: forwards;  
     opacity: 0;
     
@@ -43,7 +43,7 @@
     p{
         font-size: 20px;
         font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        animation: fadeIn 3s backwards;
+        animation: fadeIn 2s backwards;
         
     }
     
@@ -59,7 +59,7 @@
     &:hover{
         box-shadow: 0px 0px 60px rgb(46, 33, 123);
     }  
-    animation: fadeInDown 2s 4s;
+    animation: fadeInDown 1s 2s;
     animation-fill-mode: forwards;  
     opacity: 0;
     ul{
